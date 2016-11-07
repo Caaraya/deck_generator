@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  backgroundimage: MyString
+  backgroundcolour: MyString
+  maxcards: 1
+  name: MyString
+  bordercolour: MyString
+  borderthickness: MyString
+  sets: MyString
+  cards: MyString
+  cardsremaining: 1
+
+two:
+  backgroundimage: MyString
+  backgroundcolour: MyString
+  maxcards: 1
+  name: MyString
+  bordercolour: MyString
+  borderthickness: MyString
+  sets: MyString
+  cards: MyString
+  cardsremaining: 1

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  images: MyString
+  textboxes: MyString
+  cards: MyString
+  deck: MyString
+  cardcollection: 1
+  foregroundcolour: MyString
+  borderthickness: MyString
+  bordercolour: MyString
+
+two:
+  name: MyString
+  images: MyString
+  textboxes: MyString
+  cards: MyString
+  deck: MyString
+  cardcollection: 1
+  foregroundcolour: MyString
+  borderthickness: MyString
+  bordercolour: MyString

@@ -1,0 +1,2 @@
+class Layoutset < ApplicationRecord
+end
