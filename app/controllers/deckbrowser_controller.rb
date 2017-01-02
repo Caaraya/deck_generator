@@ -17,24 +17,29 @@ class DeckbrowserController < ApplicationController
 
   def create
     @deck = Deck.new(deck_params)
-
-    #do something or whatever
+    if @deck.save
+      redirect_to "/"#browse_decks
+    else
+      render 'new'
+    end
   end
 
   def update
     @deck = Deck.find(params[:id])
-
-    #do something
+    if @deck.update(deck_params)
+      redirect_to "/"#browse_decks
+    else
+      render 'edit'
+    end
   end
 
   def destroy
     @deck = Deck.find(params[:id])
     @deck.destroy
-
-    #do something
+    redirect_to browse_decks
   end
   private
   def deck_params
-  params.require(:deck, :maxcards, :name).permit(:bordercolour, :borderthickness, :backgroundimage, :backgroundcolour)
+    params.permit(:bordercolour, :maxcards, :name, :borderthickness, :backgroundimage, :backgroundcolour)
   end
 end

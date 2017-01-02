@@ -1,0 +1,30 @@
+<%= link_to 'Home', "/" %>
+<%= form_for @deck do |f|%>
+<div class="form-group">
+    <%= f.label :name, "Name" %>
+    <%= f.text_field :name %>
+</div>
+<div class="form-group">
+    <%= f.label :maxcards %>
+    <%= f.range_field(:maxcards, in: 10..250) %>
+</div>
+<div class="form-group">
+    <%= f.label :backgroundcolour, "Background" %>
+    <%= f.color_field :backgroundcolour %>
+</div>
+<div class="form-group">
+    <%= f.label :bordercolour, "Border" %>
+    <%= f.color_field :bordercolour %>
+</div>
+<div class="form-group">
+    <%= f.label :backgroundimage, "Background Image" %>
+    <%= f.file_field :backgroundimage, :class => "form-control" %>
+</div>
+<div class="form-group">
+    <%= f.label :borderthickness %>
+    <%= f.range_field(:borderthickness, in: 0..10) %>
+</div>
+
+<%= f.submit "Save Changes", class: "btn btn-primary" %>
+
+<% end %>

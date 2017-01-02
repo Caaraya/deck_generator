@@ -1,8 +1,7 @@
 <h1>Deckbrowser#browse_decks</h1>
 <p>Find me in app/views/deckbrowser/browse_decks.html.erb</p>
-<%= form_for @deck, url: {action: "create"}, html: {class: "deck_form"} do |f|%>
-
-<% end %>
+<%= button_to "New", action: "create"%>
 <% @decks.each do |deck| %>
 Deck: <%= deck.name %>
+<%= button_to "Edit", action: "update", id: deck.id %>
 <% end %>
